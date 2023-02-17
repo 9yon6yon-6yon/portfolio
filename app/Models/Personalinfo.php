@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Personalinfo extends Model
 {
     use HasFactory;
+    protected $personalinfos;
+    protected $pinfo_id;
 }
