@@ -22,12 +22,18 @@
                                 <div class="form-outline form-white mb-4">
                                     <input type="email" name="email" id="typeEmailX" class="form-control form-control-lg"
                                         placeholder="Email address" value="{{old('email')}}"/>
+                                        @if ($errors->has('email')) 
+                                                <span class="text-danger"> {{$errors->first('email')}} </span>                     
+                                        @endif
 
                                 </div>
 
                                 <div class="form-outline form-white mb-4">
                                     <input type="password" name="password" id="typePasswordX" class="form-control form-control-lg"
                                         placeholder="Password" />
+                                        @if ($errors->has('password')) 
+                                        <span class="text-danger"> {{$errors->first('password')}} </span>                            
+                                        @endif
 
                                 </div>
 

@@ -21,24 +21,36 @@
                                 <div class="form-outline form-white mb-4">
                                     <input type="text" name="user_name" id="typeEmailX"
                                         class="form-control form-control-lg" placeholder="Name" />
+                                        @if ($errors->has('user_name'))
+                                        <span class="text-danger"> {{$errors->first('user_name')}} </span>              
+                                        @endif
 
                                 </div>
 
                                 <div class="form-outline form-white mb-4">
                                     <input type="email" name="email" id="typeEmailX"
                                         class="form-control form-control-lg" placeholder="Email address" />
+                                        @if ($errors->has('email'))
+                                        <span class="text-danger"> {{$errors->first('email')}} </span>              
+                                        @endif
 
                                 </div>
 
                                 <div class="form-outline form-white mb-4">
                                     <input type="password" name="password" id="typePasswordX"
                                         class="form-control form-control-lg" placeholder="Password" />
+                                        @if ($errors->has('password'))
+                                        <span class="text-danger"> {{$errors->first('password')}} </span>              
+                                        @endif
 
                                 </div>
 
                                 <div class="form-outline form-white mb-4">
                                     <input type="password" name="password_confirmation" id="typePasswordX"
                                         class="form-control form-control-lg" placeholder="Confirm Password" />
+                                        @if ($errors->has('password_confirmation'))
+                                        <span class="text-danger"> {{$errors->first('password_confirmation')}} </span>              
+                                        @endif
 
                                 </div>
                                 <div>

@@ -17,7 +17,7 @@ use App\Http\Controllers\RegisterUser;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('login');
 });
 Route::get('/login', [RegisterUser::class,'login_index'])->name('Login');
 Route::post('/login', [RegisterUser::class,'logIn']);

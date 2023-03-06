@@ -4,6 +4,7 @@
     <title>Dashboard</title>
 @endpush
 <div class="container pt-3">
+    logged in successfully
  
 </div>
 
